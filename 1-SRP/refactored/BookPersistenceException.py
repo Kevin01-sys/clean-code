@@ -1,0 +1,2 @@
+class BookPersistenceException(Exception):
+    pass
