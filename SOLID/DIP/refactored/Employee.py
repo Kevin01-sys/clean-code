@@ -1,10 +1,12 @@
 class Employee:
     def __init__(self, full_name: str, salary: int):
-        self.full_name = full_name
-        self.salary = salary
+        self._full_name = full_name
+        self._salary = salary
 
-    def get_full_name(self) -> str:
-        return self.full_name
+    @property
+    def full_name(self) -> str:
+        return self._full_name
 
-    def get_salary(self) -> int:
-        return self.salary
+    @property
+    def salary(self) -> int:
+        return self._salary
